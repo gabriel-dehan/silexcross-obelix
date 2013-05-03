@@ -5,7 +5,7 @@ School project for Silex
 
 # What you will need to develop :
 
-There is a bunch of script inside the `server/` directory.
+There is a bunch of scripts inside the `server/` directory.
 If you are using windows, you can simply double click on any of the bat files to launch a server.
 Alternatively, you can open the `cmd` prompt and run the batfile from there.
 On linux, simply use `server/ruby.sh` or any of the other shell executables.
@@ -16,7 +16,7 @@ On linux, simply use `server/ruby.sh` or any of the other shell executables.
 # Architecture :
 
 `index.html` is the main file. It loads all other files according to the URL :
-`http://yoururl.com/index.html/
+`http://yoururl.com/`
 
 # How partial template inclusion works :
 
