@@ -1,0 +1,28 @@
+[class="span10"] {
+ background-color: green;
+}
+
+#editor-span{
+	background-color: grey;
+}
+
+#tools{
+	background-color: lightgreen;
+	line-height: 3000%;
+	border-radius: 2px;
+	text-align: center;
+}
+
+#editor{
+	background-color: lightgreen;
+	line-height: 3000%;
+	border-radius: 2px;
+	text-align: center;
+}
+
+#attribute{
+	background-color: lightgreen;
+	line-height: 3000%;
+	border-radius: 2px;
+	text-align: center;
+}

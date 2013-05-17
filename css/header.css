@@ -1,0 +1,12 @@
+#header{
+	background-color: #f1f6f5;	
+	line-height: 30px;
+	color:#525252;
+}
+
+
+#hover-header{
+	background-color: #f1f6f5;
+	line-height: 30px;
+	border-bottom: solid 1px #bbbbbb;
+}
