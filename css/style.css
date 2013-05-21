@@ -130,8 +130,57 @@ a:hover
 {
      display: none;    
 }
-#newApp .form
+#newApp .hero-unit
 {
-     margin-top:50px;
-     width:210px;
+	
+	padding:5px;
+	text-align:center;
+	margin-top:50px;
+}
+#newApp .btn
+{
+	width:200px;
+}
+#newApp .form, #newApp .steps
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#newApp li 
+{
+	list-style: none;
+}
+#newApp li.title
+{
+	margin-left:50px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#newApp li.lightgrey 
+{
+	color:#C4C4C4;
+}
+#newApp li.grey
+{
+	color:#9F9B9F;
+}
+#newApp div.arrows
+{
+	position: relative;
+	height:355px;
+	width:100px;
+}
+#newApp div.arrows .down
+{
+	position:absolute;
+	bottom:0px;
+}
+#newApp div.arrows .right
+{
+	position:absolute;
+	bottom:125px;
+}
+#newApp div.iphone
+{
+	padding:30px 50px;
 }
