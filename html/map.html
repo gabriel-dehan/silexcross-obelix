@@ -1,5 +1,51 @@
 <script type="text/javascript">
-  partial.load();
+  partial.load('headerMap');
 </script>
 
-<h1>This is the map<h2>
+<div class="map-container">
+  <div class="top-toolbar">
+    <img src="resources/img/map/icons.png">
+  </div>
+
+  <ul class="sidebar-toolbar">
+    <li><img src="resources/img/map/new.png"></li>
+    <li><img src="resources/img/map/delete.png"></li>
+    <li><img src="resources/img/map/copy.png"></li>
+    <li><img src="resources/img/map/share.png"></li>
+  </ul>
+
+  <div class="maps">
+    <div class="map top">
+      <span class="separator horizontal top"></span>
+      <div class="content">
+      </div>
+      <span class="separator horizontal bottom"></span>
+    </div>
+    <div class="map left">
+      <div class="content">
+        <p>Master Page Left</p>
+      </div>
+      <span class="separator vertical right"></span>
+    </div>
+    <div class="map center">
+      <span class="separator horizontal top"></span>
+      <span class="separator vertical left"></span>
+      <div class="content">
+        <p>Master Page</p>
+      </div>
+      <span class="separator vertical right"></span>
+      <span class="separator horizontal bottom"></span>
+    </div>
+    <div class="map right">
+      <span class="separator vertical left"></span>
+      <div class="content">
+        <p>Master Page Right</p>
+      </div>
+    </div>
+    <div class="map bottom">
+      <span class="separator horizontal top"></span>
+      <div class="content new">
+      </div>
+    </div>
+  </div>
+</div>

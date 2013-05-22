@@ -1,0 +1,356 @@
+body
+{
+	background-image:url('../resources/img/login/bg-login.png');
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#container {
+  padding: 0;
+}
+
+a
+{
+	color:#585b5e;
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+/* CSS PAGE LOGIN */
+
+.btn-primary
+{
+	background:none;
+	background-color: #900274;
+}
+
+.btn-primary:hover,
+.btn-primary:hover
+{
+	background-color: #620D57;
+}
+
+.btn-primary a
+{
+	color:#ffffff;
+}
+
+#loginPage .form input.input,
+#signupPage .form input.input
+{
+	width:96%;
+	height:30px;
+}
+
+#loginPage div.row-fluid,
+#signupPage div.row-fluid
+{
+	margin:0 auto 15px;
+}
+#loginPage a.forgot,
+#signupPage a.forgot
+{
+	text-align: center;
+	display:block;
+	color:#585b5e;
+	font:15px Helvetica,Arial,sans-serif;
+	text-decoration: underline;
+}
+#loginPage a.forgot:hover,
+#signupPage a.forgot:hover
+{
+	color:#000000;
+}
+#loginPage .checkbox
+{
+	font:13px Helvetica,Arial,sans-serif;
+}
+#loginPage .hero-unit,
+#signupPage .hero-unit
+{
+	padding:15px;
+}
+
+#loginPage .buttons .btn,
+#signupPage .buttons .btn
+{
+	margin-bottom:10px;
+}
+
+
+/* CSS PAGE SIGNUP */
+
+#signupPage .form .controls-row input.input1
+{
+	width:48%;
+	height:40px;
+}
+
+#signupPage p.title
+{
+	font:15px Helvetica,Arial,sans-serif;
+	display:inline;
+	line-height:30px;
+	height:30px;
+}
+#signupPage button.back
+{
+	font:15px Helvetica,Arial,sans-serif;
+	float:right;
+	display:inline;
+}
+#signupPage div.row-fluid.links
+{
+	margin:0;
+	height:30px;
+}
+
+/* CSS Connected Page */
+
+#connectedPage .hero-unit
+{
+	padding:10px 10px 5px;
+	margin-bottom:20px;
+}
+#connectedPage .hero-unit button
+{
+	margin-bottom:10px;
+}
+
+#updateOK .row-fluid
+{
+	margin-top:20px;
+}
+
+#contact textarea
+{
+ 	width:100%;
+}
+
+
+/* CSS FANCYBOX */
+
+#updateOK,#contactOK,#termsOfUse
+{
+     display: none;
+}
+#newApp .hero-unit
+{
+
+	padding:5px;
+	text-align:center;
+	margin-top:50px;
+}
+#newApp .btn
+{
+	width:200px;
+}
+#newApp .form, #newApp .steps
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#newApp li
+{
+	list-style: none;
+}
+#newApp li.title
+{
+	margin-left:50px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#newApp li.lightgrey
+{
+	color:#C4C4C4;
+}
+#newApp li.grey
+{
+	color:#9F9B9F;
+}
+#newApp div.arrows
+{
+	position: relative;
+	height:355px;
+	width:100px;
+}
+#newApp div.arrows .down
+{
+	position:absolute;
+	bottom:0px;
+}
+#newApp div.arrows .right
+{
+	position:absolute;
+	bottom:125px;
+}
+#newApp div.iphone
+{
+	padding:30px 50px;
+}
+
+
+/* ==== MAP ==== */
+
+.navbar .navbar-inner {
+  border-top: 0;
+  background: rgb(239, 235, 240);
+  color: black;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.navbar .arrow-bot {
+  position: absolute;
+  bottom: -11px;
+  left: 49%;
+}
+
+.navbar .brand {
+  color: black;
+  display: block;
+  float: none;
+  text-align: center;
+}
+
+.navbar .navbar-text {
+  margin-top: -5px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.navbar .nav-collapse {
+  margin-top: -30px;
+}
+
+
+.navbar-bottom {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.navbar-bottom .navbar-inner {
+  background: white;
+  padding-left: 0;
+}
+
+.navbar .nav>li>a {
+  padding: 0;
+}
+
+.map-container {
+  position: relative;
+  background: #424242; /* Old browsers */
+  background: -moz-linear-gradient(top, #424242 0%, #555555 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#424242), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #424242 0%,#555555 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #424242 0%,#555555 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #424242 0%,#555555 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #424242 0%,#555555 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#555555',GradientType=0 ); /* IE6-9 */
+
+  min-height: 1000px;
+}
+
+.sidebar-toolbar {
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+
+.sidebar-toolbar {
+  margin: 0;
+  list-style: none;
+  background: white;
+  padding: 2px;
+}
+
+.sidebar-toolbar li {
+  margin-bottom: 2px;
+}
+.sidebar-toolbar li:last-child {
+  margin-bottom: 0;
+}
+
+.maps {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.map {
+  position: absolute;
+}
+
+.map .content {
+  width: 180px;
+  height: 115px;
+  background: white;
+  color: black;
+  margin: 5px;
+  float: left;
+}
+
+.map .content p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 45px 0 0 0;
+}
+
+.map .content.new {
+  background: rgb(144, 144, 144) url('../resources/img/map/plus.png') no-repeat center center;
+}
+
+.map .separator {
+  display: inline-block;
+  background: rgb(34, 34, 34);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.map .vertical {
+  height: 115px;
+  width: 16px;
+  background: rgb(60, 59, 62) url('../resources/img/map/rightleft.png') no-repeat center center;
+}
+
+.map .horizontal {
+  width: 180px;
+  height: 16px;
+  background: rgb(60, 59, 62) url('../resources/img/map/topbottom.png') no-repeat center center;
+}
+
+.separator.left { left: -20px; right: auto; }
+.separator.right { right: -20px; left: auto; }
+.separator.top { top: -20px; bottom: auto; }
+.separator.bottom { bottom: -20px; top: auto; }
+
+
+.top {
+  top: 0px;
+  left: 40%;
+}
+
+.center {
+  top: 149px;
+  left: 40%;
+}
+
+.left {
+  top: 149px;
+  left: 18.5%;
+}
+
+.right {
+  top: 149px;
+  left: 61.5%;
+}
+
+
+.bottom {
+  top: 299px;
+  left: 40%;
+}
