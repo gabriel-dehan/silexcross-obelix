@@ -1,14 +1,239 @@
 <script type="text/javascript">
-  partial.load();
+  partial.load("header");
 </script>
+<div id="big-container">
+	<!-- // Top row //-->
+    <div class="row">
+    	<div class="span12">
+        	<!-- // container-toolbar // -->
+            <div id="container-toolbar">
+                <div id="toolbar">
+                	<img src="resources/img/editor/tool_bar/icones_16.png" onmouseover="$('#back').fadeIn(200);" onmouseout="$('#back').fadeOut(80);"/>
+                    	<div class="tool_popup" id="back">back</div>
+                    <img src="resources/img/editor/tool_bar/icones_18.png" onmouseover="$('#forward').fadeIn(200);" onmouseout="$('#forward').fadeOut(80);"/>
+                    	<div class="tool_popup" id="forward">forward</div>
+                    <img src="resources/img/editor/tool_bar/icones_20.png" onmouseover="$('#close').fadeIn(200);" onmouseout="$('#close').fadeOut(80);"/>
+                    	<div class="tool_popup" id="close">close</div>
+                    <img src="resources/img/editor/tool_bar/icones_22.png" onmouseover="$('#select').fadeIn(200);" onmouseout="$('#select').fadeOut(80);"/>
+                    	<div class="tool_popup" id="select">select tool</div>
+                    <img src="resources/img/editor/tool_bar/icones_24.png" onmouseover="$('#move').fadeIn(200);" onmouseout="$('#move').fadeOut(80);"/>
+                    	<div class="tool_popup" id="move">move tool</div>
+                    <img src="resources/img/editor/tool_bar/icones_26.png" onmouseover="$('#zoom-out').fadeIn(200);" onmouseout="$('#zoom-out').fadeOut(80);"/>
+                    	<div class="tool_popup" id="zoom-out">zoom out</div>
+                    <img src="resources/img/editor/tool_bar/icones_28.png" onmouseover="$('#zoom-in').fadeIn(200);" onmouseout="$('#zoom-in').fadeOut(80);"/>
+                    	<div class="tool_popup" id="zoom-in">zoom in</div>
+                    <img src="resources/img/editor/tool_bar/icones_30.png" onmouseover="$('#copy').fadeIn(200);" onmouseout="$('#copy').fadeOut(80);"/>
+                    	<div class="tool_popup" id="copy">copy</div>
+                    <img src="resources/img/editor/tool_bar/icones_32.png" onmouseover="$('#paste').fadeIn(200);" onmouseout="$('#paste').fadeOut(80);"/>
+                    	<div class="tool_popup" id="paste">paste</div>
+                    <img src="resources/img/editor/tool_bar/icones_34.png" onmouseover="$('#up').fadeIn(200);" onmouseout="$('#up').fadeOut(80);"/>
+                    	<div class="tool_popup" id="up">bring forward</div>
+                    <img src="resources/img/editor/tool_bar/icones_36.png" onmouseover="$('#down').fadeIn(200);" onmouseout="$('#down').fadeOut(80);"/>
+                    	<div class="tool_popup" id="down">bring backward</div>
+                    <img src="resources/img/editor/tool_bar/icones_38.png" onmouseover="$('#regle').fadeIn(200);" onmouseout="$('#regle').fadeOut(80);"/>
+                    	<div class="tool_popup" id="regle">hide/show the rules</div>
+                    <img src="resources/img/editor/tool_bar/icones_40.png" onmouseover="$('#grille').fadeIn(200);" onmouseout="$('#grille').fadeOut(80);"/>
+                    	<div class="tool_popup" id="grille">hide/show the grid</div>
+                    <img src="resources/img/editor/tool_bar/icones_42.png" onmouseover="$('#align-left').fadeIn(200);" onmouseout="$('#align-left').fadeOut(80);"/>
+                    	<div class="tool_popup" id="align-left">align to the left</div>
+                    <img src="resources/img/editor/tool_bar/icones_44.png" onmouseover="$('#align-center').fadeIn(200);" onmouseout="$('#align-center').fadeOut(80);"/>
+                    	<div class="tool_popup" id="align-center">align on center</div>
+                    <img src="resources/img/editor/tool_bar/icones_46.png" onmouseover="$('#align-right').fadeIn(200);" onmouseout="$('#align-right').fadeOut(80);"/>
+                    	<div class="tool_popup" id="align-right">align to the right</div>
+                    <img src="resources/img/editor/tool_bar/icones_48.png" onmouseover="$('#vertical-align').fadeIn(200);" onmouseout="$('#vertical-align').fadeOut(80);"/>
+                    	<div class="tool_popup" id="vertical-align">vertical align</div>
+                    <img src="resources/img/editor/tool_bar/icones_50.png" onmouseover="$('#horizontal-align').fadeIn(200);" onmouseout="$('#horizontal-align').fadeOut(80);"/>
+                    	<div class="tool_popup" id="horizontal-align">horizontal align</div>
+                </div>
+            </div>
+            <!-- end container-toolbar -->
+        </div><!-- end span12 -->
+    </div><!--end row -->
+    <!-- end Top row -->
 
-<h1>This is the editor</h1>
-<div class="row" id="editor">
-	<div class="span12" id="editor-span">
-        <div class="row">
-            <div class="span1" id="tools">Tools</div>
-            <div class="span8" id="editor">Editor</div>
-            <div class="span3" id="attribute">Attribute</div>
-        </div>
+    <!-- // Mid row // -->
+    <div class="row" style="margin-top:5px;">
+            <!-- // container-menu //-->
+            <div id="container-menu">
+            	<div id="menu">
+                	<div class="filtre-off"><div class="tool" id="text" onclick="clicTool(this.id);"></div></div>
+                    	<div class="toolbar" id="toolbar-text">
+                        	<img src="resources/img/editor/menu/text/sm_texte_04.png"/>
+                            <img src="resources/img/editor/menu/text/sm_texte_05.png" onclick="extend('#extend_text', '175');"/>
+                            <img src="resources/img/editor/menu/text/sm_texte_06.png" id="extend_text" width="0px"/>
+                            <img src="resources/img/editor/menu/text/sm_texte_07.png"/>
+                            <img src="resources/img/editor/menu/text/sm_texte_08.png"/>
+                            
+                        </div>
+                    <div class="filtre-off"><div class="tool" id="image" onclick="clicTool(this.id);"></div></div>
+                    	<div class="toolbar" id="toolbar-image">
+                        	<img src="resources/img/editor/menu/image/sm_images_04.png"/>
+                            <img src="resources/img/editor/menu/image/sm_images_05.png"/>
+                            <img src="resources/img/editor/menu/image/sm_images_06.png" onclick="extend('#extend_image', '114');"/>
+                            <img src="resources/img/editor/menu/image/sm_images_07.png" id="extend_image" width="0px"/>
+                            <img src="resources/img/editor/menu/image/sm_images_08.png"/>
+                        </div>
+                    <div class="filtre-off"><div class="tool" id="polygon" onclick="clicTool(this.id);"></div></div>
+                    	<div class="toolbar" id="toolbar-polygon">
+                        	<img src="resources/img/editor/menu/polygon/sm_formes_04.png"/>
+                            <img src="resources/img/editor/menu/polygon/sm_formes_05.png"/>
+                            <img src="resources/img/editor/menu/polygon/sm_formes_06.png"/>
+                            <img src="resources/img/editor/menu/polygon/sm_formes_07.png"/>
+                            <img src="resources/img/editor/menu/polygon/sm_formes_08.png"/>
+                            <img src="resources/img/editor/menu/polygon/sm_formes_09.png"/>
+                        </div>
+                    <div class="filtre-off"><div class="tool" id="list" onclick="clicTool(this.id);"></div></div>
+                    	<div class="toolbar" id="toolbar-list">
+                        	<img src="resources/img/editor/menu/list/sm_menu_04.png"/>
+                            <img src="resources/img/editor/menu/list/sm_menu_05.png"/>
+                            <img src="resources/img/editor/menu/list/sm_menu_06.png"/>
+                            <img src="resources/img/editor/menu/list/sm_menu_07.png"/>
+                        </div>
+                    <div class="filtre-off"><div class="tool" id="feed" onclick="clicTool(this.id);"></div></div>
+                    	<div class="toolbar" id="toolbar-feed">
+                        	<img src="resources/img/editor/menu/social_network/sm_feed_04.png"/>
+                            <img src="resources/img/editor/menu/social_network/sm_feed_05.png"/>
+                            <img src="resources/img/editor/menu/social_network/sm_feed_06.png"/>
+                        </div>
+                    <div class="filtre-off"><div class="tool" id="plugin" onclick="clicTool(this.id);"></div></div>
+                    	<div class="toolbar" id="toolbar-plugin">
+                        	<img src="resources/img/editor/menu/plugins/sm_plugin_04.png"/>                        
+                            <img src="resources/img/editor/menu/plugins/sm_plugin_05.png"/>
+                            <img src="resources/img/editor/menu/plugins/sm_plugin_06.png"/>
+                            <img src="resources/img/editor/menu/plugins/sm_plugin_07.png"/>
+                            <img src="resources/img/editor/menu/plugins/sm_plugin_08.png"/>
+                            <img src="resources/img/editor/menu/plugins/sm_plugin_09.png"/>
+                            <img src="resources/img/editor/menu/plugins/sm_plugin_10.png"/>
+                        </div>
+                    <div class="filtre-end"><div class="tool" id="more"></div></div>
+                    	<div class="toolbar" id="toolbar-more">
+                        
+                        </div>
+                </div><!-- end menu-->
+            </div>
+            <!-- end container-menu -->
+                        
+            <!-- // container-editor // -->
+            <div id="container-editor">
+                <div id="editor">
+                    <canvas id="layer" width="850" height="450">Duuude, your browser doesn't support the HTML5 canvas tag. You suck ! 
+                        <img id="website" src="resources/img/editor/website.jpg"/> 
+                    </canvas>
+                    <canvas id="navbar" width="15" height="550">
+                        <img id="bar" src="resources/img/editor/tool_bar/toolbar.jpg"/>
+                    </canvas>
+                </div>
+            </div>
+            <!-- end container-editor> -->
+            
+           
     </div>
-</div>
+    <!-- end Mid row-->
+    
+     <!-- // container-attribute //-->
+            <div id="container-attribute">
+                <div id="attribute">
+                	<img src="resources/img/editor/attribute/attribute.png" class="attribute-logo"/><br /><br />
+                	<!--<div class="attribute-logo">ATTRIBUTE</div>-->
+                    Name<br />
+                    <input type="text" placeholder="Title's name"/><br />
+                    
+                    Box Size<br />
+                    <input type="text" style="width:65px;" placeholder="H"/> px &nbsp;&nbsp;X&nbsp;&nbsp;<input type="text" style="width:65px;" placeholder="W" /> px <br />
+                    Box Position<br />
+                    <input type="text" style="width:65px;" placeholder="X"/> px &nbsp;&nbsp;X&nbsp;&nbsp;<input type="text" style="width:65px;" placeholder="Y" /> px
+                    <hr>                    
+                    Format <br />
+                    <div class="select-arrow"></div>
+                        <select class="test">
+                            <option>Title 1</option>
+                            <option>Title 2</option>
+                            <option>Title 3</option>
+                        </select><br />
+
+                    
+                    Font family <br />
+                    <div class="select-arrow"></div>
+                    <select>
+                        <option>Verdana, Arial, sans-serif</option>
+                        <option>Comic Sans MS, Calibri, Century</option>                 
+                    </select> <br />
+                    
+                    Font Size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alignment <br />
+                    <div class="select-arrow" style="margin-left:35px;"></div>
+                    <select style="width:60px;">
+                        <option>8</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option selected="selected">12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>16</option>
+                        <option>17</option>
+                    </select><br />
+                    
+                    Color <br />
+                    
+                    <hr width="230px"/>
+                    Link to <br/>
+                    <div class="select-arrow"></div>
+                    <select>
+                        <option>None</option>
+                        <option>Url_1</option>
+                    </select> <br />
+                    
+                    <input type="search" placeholder="Search an element..."/>
+                    
+                    <hr width="230px"/>
+                    
+                    Transtion <br />
+                    <div class="select-arrow"></div>
+                    <select>
+                        <option>Swipe left</option>
+                        <option>Swipe right</option>
+                    </select> <br /><br />
+                    
+                   	<img src="resources/img/editor/attribute/preset.png" class="attribute-logo" style="margin-top:38px;"/>
+                    <img src="resources/img/editor/attribute/librairy.png" class="attribute-logo"/>
+                </div>
+            </div>
+            <!-- end container-attribute-->
+    
+    <!-- bottom row -->
+    <div class="row">
+        <div class="span12">
+            <!-- // container-tab // -->
+            <div id="container-tab">
+                <div id="tab">
+                    <img src="resources/img/editor/tab/onglet_page_01.png" style="box-shadow: 0px 0px 2px 1px rgba(179, 179, 179, 0.2);"/>
+                    <img src="resources/img/editor/tab/onglet_page_03.png" id="onglet1" onclick="$('#'+this.id).fadeOut();" />
+                    <img src="resources/img/editor/tab/onglet_page_05.png" id="onglet2" onclick="$('#'+this.id).fadeOut();"/>
+                    <img src="resources/img/editor/tab/onglet_page_07.png" id="onglet3" onclick="$('#'+this.id).fadeOut();"/>
+                    <img src="resources/img/editor/tab/onglet_page_09.png" id="onglet4" onclick="$('#'+this.id).fadeOut();"/>
+                </div>
+            </div>
+            <!-- end container-tab -->
+        </div> <!-- end span12 -->
+    </div> <!--end row -->
+    <!-- end bottom row -->
+</div><!-- end big container-->
+
+<!-- js canvas editor -->
+<script type="text/javascript">
+	var c = document.getElementById("layer");
+	var ctx = c.getContext("2d");
+	var canvaHeight = document.getElementById("layer").height;
+	var canvaWidth = document.getElementById("layer").width;
+	var website=document.getElementById("website");
+	ctx.fillRect(website,canvaWidth,canvaHeight);	
+	ctx.drawImage(website,0,0);
+
+	var nav = document.getElementById("navbar");
+	var navtx = nav.getContext("2d");
+	var navHeight = document.getElementById("navbar").height;
+	var navWidth = document.getElementById("navbar").width;	
+	var bar=document.getElementById("bar");
+	ctx.fillRect(bar,navWidth,navHeight);	
+	ctx.drawImage(bar,835,0);
+</script>
+<!-- end js canvas editor -->

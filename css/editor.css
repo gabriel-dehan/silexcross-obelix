@@ -1,28 +1,247 @@
-[class="span10"] {
- background-color: green;
+@font-face{
+font-family: editorFont;
+src: url('font/Exo-ExtraLight.otf');
+     /*url('font/Exo-ExtraLight.otf');  IE9 */
 }
 
-#editor-span{
-	background-color: grey;
+html, body{
+	font-family: editorFont, Verdana, Geneva, sans-serif;
+	color: white;
+}
+hr{
+	width: 225px;
+	margin:5px 0 5px 0;
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(53, 52, 53, 0.9);
+	box-shadow: 0px 2px 4px 1px #605f5d;
 }
 
-#tools{
-	background-color: lightgreen;
-	line-height: 3000%;
-	border-radius: 2px;
-	text-align: center;
+#big-container{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 730px;
+	padding:0;
+	margin:0 0 0 -20px;
+	overflow: hidden;
+	
+	background: #333333; /* Old browsers */
+	background: -moz-linear-gradient(top,  #333333 0%, #4d4d4d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#4d4d4d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #333333 0%,#4d4d4d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #333333 0%,#4d4d4d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #333333 0%,#4d4d4d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #333333 0%,#4d4d4d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#4d4d4d',GradientType=0 ); /* IE6-9 */
+}
+
+#container-toolbar{
+	position: relative;
+	width: auto;
+	height: 60px;
+	float: left;
+	margin-left:40px;
+}
+
+#container-menu{
+	position: relative;
+	  width: 10%;
+	min-width: 100px;
+	height:450px;
+	float:left;
+	z-index:10;
+}
+
+#menu .filtre-off{
+	margin-left:27px;
+	margin-bottom:-2px;
+	width: 87px;
+	height: 59px;
+	background-image:url(../resources/img/editor/menu/filter/filtre_last_off.png);
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+
+#menu .filtre-off:hover{
+	background-image:url(../resources/img/editor/menu/filter/filtre_last_on.png);
+}
+
+#menu .filtre-end{
+	margin-left:27px;
+	cursor: pointer;
+	width: 59px;
+	height: 59px;
+}
+
+#menu .tool{
+	margin-left: 28px;
+	width: 58px;
+	height:59px;
+	margin-bottom:-2px;
+	background-repeat: no-repeat;
+}
+
+#text{background-image:url(../resources/img/editor/menu/menu/btn_palette_03.png);}
+	#text:hover{background-image:url(../resources/img/editor/menu/text/sm_texte_03.png)}
+#image{background-image:url(../resources/img/editor/menu/menu/btn_palette_05.png);}
+	#image:hover{background-image:url(../resources/img/editor/menu/image/sm_images_03.png);}
+#polygon{background-image: url(../resources/img/editor/menu/menu/btn_palette_06.png);}
+	#polygon:hover{background-image:url(../resources/img/editor/menu/polygon/sm_formes_03.png);}
+#list{background-image:url(../resources/img/editor/menu/menu/btn_palette_07.png);}
+	#list:hover{background-image:url(../resources/img/editor/menu/list/sm_menu_03.png);}
+#feed{background-image: url(../resources/img/editor/menu/menu/btn_palette_08.png);}
+	#feed:hover{background-image:url(../resources/img/editor/menu/social_network/sm_feed_03.png);}
+#plugin{background-image: url(../resources/img/editor/menu/menu/btn_palette_09.png);}
+	#plugin:hover{background-image:url(../resources/img/editor/menu/plugins/sm_plugin_03.png);}
+#more{background-image: url(../resources/img/editor/menu/more/btn_palette_10.png);}
+
+.toolbar{
+	position: absolute;
+	margin-left:112px;
+	height:57px;
+	width:400px;
+	margin-top: -58px;
+}
+
+.toolbar img{
+	float:left;
+	cursor: pointer;
+}
+
+#toolbar-text,#toolbar-image,#toolbar-polygon,#toolbar-list,#toolbar-feed,#toolbar-plugin,#toolbar-more{
+	display: none;
+}
+
+#container-editor{
+	position:relative;
+	width:65%;
+	min-width: 400px;
+	height:500px;
+	float:left;
+	margin-left: 20px;
+	z-index:3;
 }
 
 #editor{
-	background-color: lightgreen;
-	line-height: 3000%;
 	border-radius: 2px;
-	text-align: center;
+}
+
+#layer{
+	width:100%;	
+	height:100%;
+}
+
+#container-attribute{
+	display:relative;
+	max-width:270px;
+	width: 20%;
+	min-width: 150px;
+	height:500px;
+	float: right;
+	margin-top: -565px;
+}
+
+#container-tab{
+	position:relative;
+	width:auto;
+	height:auto;
+	float:left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#tools img {
+	cursor: pointer;
+	margin-left: -6px;
 }
 
 #attribute{
-	background-color: lightgreen;
-	line-height: 3000%;
-	border-radius: 2px;
+	padding: 5px 0px 5px 15px;
+	color: #8c8c8c;
+	background-color: #464543;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 3px 5p x#2a2a2a;
+	box-shadow: 0px 0px 3px 2px #2a2a2a;
+	text-align:left;
+}
+
+.attribute-logo{
+	position:absolute;
+	margin-top:-8px;
+	margin-left:-16px;
+	width:270px;
+	height:auto;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 3px 2px #2a2a2a;
+	box-shadow: -1px 0px 1px 1px #2a2a2a;
+}
+
+canvas#layer{
+	-webkit-box-shadow: 0px 0px 3px 5p x#2a2a2a;
+	box-shadow: 0px 0px 2px 2px #2a2a2a;
+	cursor: move;
+}
+
+.span12 img{
+	cursor: pointer;
+}
+
+#navbar{
+	position: absolute;
+	margin-left:845px;
+	cursor: crosshair;
+}
+
+.tool_popup{
+	position:absolute;
+	width: 104px;
+	height:27px;
+	font-size:11px;
 	text-align: center;
+	padding-top:6px;
+	color: #5c5c5c;
+	background-image:url(../resources/img/editor/tool_bar/bulle_03.png);
+	background-repeat: no-repeat;
+}
+
+#back.tool_popup{margin-left:-40px;display:none;}
+#forward.tool_popup{margin-left:-10px;display:none;}
+#close.tool_popup{margin-left:20px;display:none;}
+#select.tool_popup{margin-left:55px;display:none;}
+#move.tool_popup{margin-left:85px;display: none;}
+#zoom-out.tool_popup{margin-left:115px;display:none;}
+#zoom-in.tool_popup{margin-left:145px;display:none;}
+#copy.tool_popup{margin-left:180px;display:none;}
+#paste.tool_popup{margin-left:210px;display:none;}
+#up.tool_popup{margin-left:245px;display:none;}
+#down.tool_popup{margin-left:275px;display:none;}
+#regle.tool_popup{margin-left:300px;display:none;}
+#grille.tool_popup{margin-left:335px;display:none;}
+#align-left.tool_popup{margin-left:365px;display:none;}
+#align-center.tool_popup{margin-left:395px;display:none;}
+#align-right.tool_popup{margin-left:425px;display:none;}
+#vertical-align.tool_popup{margin-left:455px;display:none;}
+#horizontal-align.tool_popup{margin-left:490px;display:none;}
+
+select,input[type="text"], input[type="search"]{
+	background-color:#313131;
+	color:#646464;
+	font-family: editorFont, Verdana, Geneva, sans-serif;
+	border-color: #202020;
+}
+
+input[type="search"]{
+	background-image: url(../resources/img/editor/attribute/search.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.select-arrow {
+	position:absolute;
+	width:27px;
+	height:29px;
+	margin-left:191px;
+	margin-top:1px;
+	background-image:url(../resources/img/editor/attribute/select-arrow.png);
+	background-repeat:no-repeat;
+	cursor: pointer;
 }

@@ -1,7 +1,14 @@
+@font-face{
+font-family: headerFont;
+src: url('font/Exo-Bold.otf');
+     /*url('font/Exo-Bold.otf');  IE9 */
+}
+
 #header{
 	background-color: #f1f6f5;	
 	line-height: 30px;
 	color:#525252;
+	font-family: headerFont, Verdana, Geneva, sans-serif;
 }
 
 
@@ -10,3 +17,4 @@
 	line-height: 30px;
 	border-bottom: solid 1px #bbbbbb;
 }
+
