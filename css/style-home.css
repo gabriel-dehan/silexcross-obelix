@@ -1,9 +1,8 @@
 body
 {
 	background-image:url('../resources/img/login/bg-login.png');
-	padding:20px;
 }
-a 
+a
 {
 	color:#585b5e;
 }
@@ -24,7 +23,7 @@ a:hover
 	background-color: #620D57;
 }
 
-.btn-primary a 
+.btn-primary a
 {
 	color:#ffffff;
 }
@@ -272,7 +271,7 @@ form.form,
 
 #updateOK,#contactOK,#termsOfUse
 {
-     display: none;    
+     display: none;
 }
 
 .newApp
@@ -302,7 +301,7 @@ form.form,
 
 }
 
-#newApp li 
+#newApp li
 {
 	list-style: none;
 }
@@ -312,7 +311,7 @@ form.form,
 	text-transform: uppercase;
 	font-weight: bold;
 }
-#newApp li.lightgrey 
+#newApp li.lightgrey
 {
 	color:#C4C4C4;
 }

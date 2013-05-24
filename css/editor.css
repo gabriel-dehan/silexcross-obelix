@@ -23,7 +23,7 @@ hr{
 	padding:0;
 	margin:0 0 0 -20px;
 	overflow: hidden;
-	
+
 	background: #333333; /* Old browsers */
 	background: -moz-linear-gradient(top,  #333333 0%, #4d4d4d 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#4d4d4d)); /* Chrome,Safari4+ */
@@ -126,7 +126,7 @@ hr{
 }
 
 #layer{
-	width:100%;	
+	width:100%;
 	height:100%;
 }
 
@@ -223,6 +223,7 @@ canvas#layer{
 #horizontal-align.tool_popup{margin-left:490px;display:none;}
 
 #attribute select,input[type="text"], input[type="search"]{
+  background: none;
 	background-color:#313131;
 	color:#646464;
 	font-family: editorFont, Verdana, Geneva, sans-serif;
