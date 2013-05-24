@@ -1,0 +1,353 @@
+body
+{
+	background-image:url('../resources/img/login/bg-login.png');
+	padding:20px;
+}
+a 
+{
+	color:#585b5e;
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+.btn-primary
+{
+	background:none;
+	background-color: #900274;
+}
+
+.btn-primary:hover,
+.btn-primary:hover
+{
+	background-color: #620D57;
+}
+
+.btn-primary a 
+{
+	color:#ffffff;
+}
+
+/* CSS PAGE LOGIN */
+
+
+@font-face {
+    font-family: 'exoregular';
+    src: url('../resources/fonts/exo-regular/exo-regular.eot');
+    src: url('../resources/fonts/exo-regular/exo-regular.eot?#iefix') format('embedded-opentype'),
+         url('../resources/fonts/exo-regular/exo-regular.woff') format('woff'),
+         url('../resources/fonts/exo-regular/exo-regular.ttf') format('truetype'),
+         url('../resources/fonts/exo-regular/exo-regular.svg#exoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exodemibold';
+    src: url('../resources/fonts/exo-demibold/exo-demibold.eot');
+    src: url('../resources/fonts/exo-demibold/exo-demibold.eot?#iefix') format('embedded-opentype'),
+         url('../resources/fonts/exo-demibold/exo-demibold.woff') format('woff'),
+         url('../resources/fonts/exo-demibold/exo-demibold.ttf') format('truetype'),
+         url('../resources/fonts/exo-demibold/exo-demibold.svg#exodemi_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.logo
+{
+	width:370px;
+	margin:0 auto;
+	text-align: center;
+}
+div.content
+{
+	width:370px;
+	margin:0 auto;
+}
+
+button
+{
+	text-transform: uppercase;
+	font:17px exodemibold,Arial,sans-serif;
+	font-weight: normal;
+}
+
+form.form,
+#connectedPage .appButtons,
+#connectedPage .accountButtons
+{
+	margin-top:35px;
+	border-radius:5px;
+	background-color:#e9e9ea;
+	padding:10px;
+	font:14px exoregular,Arial,sans-serif;
+}
+#connectedPage .accountButtons
+{
+	margin-top:10px;
+}
+#connectedPage button
+{
+	margin-bottom:10px;
+}
+#connectedPage button i
+{
+	float:left;
+	margin-left:20px;
+}
+
+#loginPage input
+{
+	background-color:#eeeff0;
+	width:335px;
+}
+#loginPage .form .forgot
+{
+	float:right;
+}
+#loginPage .form .input1
+{
+	float:left;
+	width:156px;
+	margin-right:10px;
+	height:30px;
+}
+#loginPage .form .input2
+{
+	float:left;
+	width:156px;
+	height:30px;
+}
+#loginPage .form .checkbox
+{
+	float:left;
+}
+#loginPage .form .checkbox label
+{
+	font:13px exoregular,Arial,sans-serif;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+#loginPage .btn
+{
+	margin-top:15px;
+	clear:both;
+}
+
+#loginPage .choices-text
+{
+	margin:10px 0;
+}
+#loginPage .back,
+#contactPage .back,
+#connectedPage .back
+{
+	font:18px exodemibold,Arial,sans-serif;
+	color:#9c9c9c;
+}
+
+#newApp2 input[type="radio"]:checked + label {
+	padding-top:50px;
+}
+
+
+#loginPage input[type="checkbox"]:checked,
+#loginPage input[type="checkbox"]:not(:checked) {
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	clip: rect(0,0,0,0);
+	-webkit-appearance:	none;
+	-moz-appearance:	none;
+	-o-appearance:		none;
+	appearance:		none;
+}
+#loginPage input[type="checkbox"]+label {
+	float: left;
+	padding-left: 26px;
+	padding-left: 2.6rem;
+	margin-right: 16px;
+	margin-right: 1.6rem;
+	position: relative;
+	cursor: pointer;
+}
+#loginPage input[type="checkbox"]+label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -9px;
+	margin-top: -.9rem;
+	width: 16px;
+	width: 1.6rem;
+	height: 16px;
+	height: 1.6rem;
+	background-color: rgba(255,255,255,.7);
+	background:	-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)), to(rgba(255,255,255,.9)));
+	background:	-webkit-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,.9));
+	background:	   -moz-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,.9));
+	background:	     -o-linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,.9));
+	background:		linear-gradient(top, rgba(255,255,255,.4), rgba(255,255,255,.9));
+	-webkit-box-shadow:	inset .1rem .1rem .2rem rgba(0,0,0,.3), inset 0 0 0 .1rem rgba(0,0,0,.1);
+	-moz-box-shadow:	inset .1rem .1rem .2rem rgba(0,0,0,.3), inset 0 0 0 .1rem rgba(0,0,0,.1);
+	-o-box-shadow:		inset 1px 1px 2px rgba(0,0,0,.3), inset 0 0 0 1px rgba(0,0,0,.1);
+	-o-box-shadow:		inset .1rem .1rem .2rem rgba(0,0,0,.3), inset 0 0 0 .1rem rgba(0,0,0,.1);
+	box-shadow:		inset 1px 1px 2px rgba(0,0,0,.2), inset 0 0 0 1px rgba(0,0,0,.1);
+	box-shadow:		inset .1rem .1rem .2rem rgba(0,0,0,.3), inset 0 0 0 .1rem rgba(0,0,0,.1);
+	-webkit-border-radius:	.3rem;
+	-moz-border-radius:	.3rem;
+	-o-border-radius:	3px;
+	-o-border-radius:	.3rem;
+	border-radius:		3px;
+	border-radius:		.3rem;
+}
+#loginPage input+label:after {
+	-webkit-transition:	-webkit-transform 0.2s ease-in-out;
+	-moz-transition:	   -moz-transform 0.2s ease-in-out;
+	-o-transition:		     -o-transform 0.2s ease-in-out;
+	transition:			transform 0.2s ease-in-out;
+}
+#loginPage .choices-text input[type="checkbox"]+label:after {
+	content: 'v';
+	position: absolute;
+	left: 2px;
+	left: 0.2rem;
+	top: 50%;
+	margin-top: -20px;
+	margin-top: -1.2rem;
+	width: 14px;
+	width: 1.4rem;
+	font-family: "Comic Sans MS", cursive;
+	color: #333;
+	font-size: 15px;
+	font-size: 2rem;
+	-webkit-transform:	skewX(-25deg) skewY(-40deg) scale(0);
+	-moz-transform:		skewX(-25deg) skewY(-40deg) scale(0);
+	-o-transform:		skewX(-25deg) skewY(-40deg) scale(0);
+	transform:		skewX(-25deg) skewY(-40deg) scale(0);
+	-webkit-transform-origin:	50% 100%;
+	-moz-transform-origin:		50% 100%;
+	-o-transform-origin:		50% 100%;
+	transform-origin:		50% 100%;
+}
+#loginPage .choices-text input[type="checkbox"]:checked+label:after {
+	-webkit-transform:	skewX(-25deg) skewY(-40deg) scale(1);
+	-moz-transform:		skewX(-25deg) skewY(-40deg) scale(1);
+	-o-transform:		skewX(-25deg) skewY(-40deg) scale(1);
+	transform:		skewX(-25deg) skewY(-40deg) scale(1);
+}
+
+#termsOfUse
+{
+	width:400px;
+	background-color:#EEEFF0;
+	padding:30px;
+	text-align: justify;
+}
+
+.contentContact
+{
+	width:250px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.content p
+{
+	margin:0 0 -25px 0;
+	font:14px exoregular,Arial,sans-serif;
+}
+
+.timeline
+{
+	text-align: center;
+	margin-top:20px;
+}
+
+/* CSS FANCYBOX */
+
+#updateOK,#contactOK,#termsOfUse
+{
+     display: none;    
+}
+
+.newApp
+{
+	text-align: center;
+}
+
+#newApp2 .content
+{
+	margin-top:20px;
+	width:650px;
+}
+#newApp2 .btn
+{
+	clear:both;
+	margin:200px auto;
+	width:200px;
+}
+
+#newApp2 input[type="radio"] {
+	display:none;
+}
+#newApp2 .device
+{
+	float:left;
+	margin:20px;
+
+}
+
+#newApp li 
+{
+	list-style: none;
+}
+#newApp li.title
+{
+	margin-left:50px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#newApp li.lightgrey 
+{
+	color:#C4C4C4;
+}
+#newApp li.grey
+{
+	color:#9F9B9F;
+}
+#newApp div.iphone
+{
+	padding:30px 50px;
+	margin-left:50px;
+}
+#newApp div.themes
+{
+	margin-left:140px;
+}
+#newApp div.themes div.listThemes
+{
+	margin-top:40px;
+	height:220px;
+	width:150px;
+	overflow:auto;
+}
+
+/*modifier la scrollbar du div elevator*/
+.elevator::-webkit-scrollbar {
+  width: 5px; /*largeur de la scrollbar verticale*/
+  height: 5px; /*hauteur de la scrollbar horizontale*/
+  background-color: #000000;}
+
+.elevator::-webkit-scrollbar-track {
+  background-color: #FFFFFF; /*couleur du fond de la scrollbar*/}
+
+.elevator::-webkit-scrollbar-thumb { /*la petite bande qui monte/descend*/
+  background-color: #000000; /* couleur de l\'ascenseur */;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;}

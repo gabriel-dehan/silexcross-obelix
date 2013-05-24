@@ -222,14 +222,14 @@ canvas#layer{
 #vertical-align.tool_popup{margin-left:455px;display:none;}
 #horizontal-align.tool_popup{margin-left:490px;display:none;}
 
-select,input[type="text"], input[type="search"]{
+#attribute select,input[type="text"], input[type="search"]{
 	background-color:#313131;
 	color:#646464;
 	font-family: editorFont, Verdana, Geneva, sans-serif;
 	border-color: #202020;
 }
 
-input[type="search"]{
+#attribute input[type="search"]{
 	background-image: url(../resources/img/editor/attribute/search.png);
 	background-repeat:no-repeat;
 	background-position:right;
