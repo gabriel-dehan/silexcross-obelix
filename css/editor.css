@@ -102,7 +102,7 @@ hr{
 	margin-top: -58px;
 }
 
-.toolbar img{
+#toolbar img, .toolbar img{
 	float:left;
 	cursor: pointer;
 }
