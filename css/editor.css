@@ -111,7 +111,7 @@ hr{
 	margin-top: -58px;
 }
 
-.toolbar img{
+#toolbar img, .toolbar img{
 	float:left;
 	cursor: pointer;
 }
@@ -231,7 +231,7 @@ canvas#layer{
 #vertical-align.tool_popup{margin-left:455px;display:none;}
 #horizontal-align.tool_popup{margin-left:490px;display:none;}
 
-#attribute select,input[type="text"], input[type="search"]{
+#attribute select,input[type="text"], input[type="search"], input[type="email"], input[type="password"]{
   background: none;
 	background-color:#313131;
 	color:#646464;

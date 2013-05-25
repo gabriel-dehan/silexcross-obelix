@@ -1,0 +1,102 @@
+<?php
+	try
+	{
+		$bdd = new PDO('mysql:host=localhost;dbname=config', 'root', 'root');
+		//a modifie avec les bons parametres, le host,
+		//le nom de la base de donnee, l'utilisateur et le mot de passe
+	}
+	catch(Exception $e)
+	{
+		die('Erreur : '.$e->getMessage());
+	}
+
+	$reponse = $bdd->query('SELECT * FROM config WHERE id=\'0\'');
+	$donnees = $reponse->fetch()
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Configuration</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">	
+	<link href="../config.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class = "container">
+	<div class="row">
+		<img src="../resources/img/config/info.jpg" align="left">
+		<img src="../resources/img/config/help.jpg" align="right">
+	</div>
+	<?php echo '</br></br>' ?>
+	<div class="row">
+	<div class = "span4">
+	<form action="config-target.php" method="post">
+				<h2>
+					Project infos
+				</h2>
+				<p>
+					<input type="text" name="project" value="<?php echo $donnees['project'];?>" class="form">
+				</p>
+				<p>
+					<input type="text" name="version" value="<?php echo $donnees['version'];?>" class="form">
+				</p>
+				<p>
+					<input type="text" name="size" value="<?php echo $donnees['size'];?>" class="form">
+				</p>
+				<p>
+					<textarea name="keywords" rows="8" cols="30"><?php echo $donnees['keywords'];?>
+					</textarea>
+				</p>
+				<p>
+					<textarea name="description" rows="8" cols="30" class="form"><?php echo $donnees['description'];?>
+					</textarea>
+				</p>
+			</div>
+			<div class = "span4">
+				<h2>
+					Hosting
+				</h2>
+				<p>
+					<input type="radio" name="host" value="weapp" id="weapp" 
+					<?php if ($donnees['host'] == 'weapp') echo "checked=\"checked\"" ?>> 
+					</label for="weapp">WeAPP hosting </label>
+				</p>
+				<p>
+					<input type="radio" name="host" value="specify" id="specify"
+					<?php if ($donnees['host'] == 'specify') echo "checked=\"checked\"" ?>> 
+					</label for="specify">Specify your host </label> 
+				</p>
+				<p>
+					<input type="text" name="ftp" value="<?php echo $donnees['ftp'];?>" class="form">
+				</p>
+				<p>
+					<input type="text" name="username" value="<?php echo $donnees['username'];?>" class="form">
+				</p>
+				<p>
+					<input type="text" name="password" value="<?php echo $donnees['password'];?>" class="form">
+				</p>
+				<p>				
+					<input type="submit" value="TEST" class="button">
+				</p>
+			</div>
+			<div class = "span4">
+				<h2>
+					Publish
+				</h2>
+				<p>
+					Lorem ispum dolor sit amet abledum abledum sit am debroum fata do simotp cateram diet
+					debroum fata do simotp cateram
+				</p>
+					<?php echo '</br>' ?>
+				<p>
+					<input type="text" name="version2" value="<?php echo $donnees['version2'];?>" class="form">
+				</p>
+					<input type="submit" value="PUBLISH NOW" class="button">
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>

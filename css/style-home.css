@@ -2,14 +2,6 @@ body
 {
 	background-image:url('../resources/img/login/bg-login.png');
 }
-a
-{
-	color:#585b5e;
-}
-a:hover
-{
-	text-decoration: none;
-}
 
 .btn-primary
 {
@@ -57,11 +49,17 @@ div.logo
 	width:370px;
 	margin:0 auto;
 	text-align: center;
+	margin-top:20px;
 }
 div.content
 {
 	width:370px;
 	margin:0 auto;
+	color:#585b5e;
+}
+div.content label:hover
+{
+	color:#005580;
 }
 
 button
@@ -69,6 +67,19 @@ button
 	text-transform: uppercase;
 	font:17px exodemibold,Arial,sans-serif;
 	font-weight: normal;
+}
+
+#loginPage input,
+#contactPage input,
+#contactPage textarea,
+#newApp input.input
+{
+	border:1px solid #ccc;
+	background-color:#eeeff0;
+}
+#loginPage input
+{
+	width:335px;
 }
 
 form.form,
@@ -95,11 +106,6 @@ form.form,
 	margin-left:20px;
 }
 
-#loginPage input
-{
-	background-color:#eeeff0;
-	width:335px;
-}
 #loginPage .form .forgot
 {
 	float:right;
@@ -142,13 +148,33 @@ form.form,
 #connectedPage .back
 {
 	font:18px exodemibold,Arial,sans-serif;
+	margin-left:50px;
 	color:#9c9c9c;
 }
 
 #newApp2 input[type="radio"]:checked + label {
 	padding-top:50px;
+	transition: all 0.5s;
+}
+#newApp2 input[type="radio"] + label {
+	padding-top:0px;
+	transition: all 0.3s;
 }
 
+#newApp .devices
+{
+	float:left;
+	width:100px;
+	margin-left:100px;
+	
+}
+#newApp .arrow-device
+{
+	height:315px;
+	float:left;
+	margin-top:20px;
+	margin-right:100px;
+}
 
 #loginPage input[type="checkbox"]:checked,
 #loginPage input[type="checkbox"]:not(:checked) {
@@ -287,7 +313,7 @@ form.form,
 #newApp2 .btn
 {
 	clear:both;
-	margin:200px auto;
+	margin:20px auto;
 	width:200px;
 }
 
@@ -298,7 +324,10 @@ form.form,
 {
 	float:left;
 	margin:20px;
-
+}
+#newApp2 .deviceList
+{
+	height:180px;
 }
 
 #newApp li
@@ -330,10 +359,19 @@ form.form,
 }
 #newApp div.themes div.listThemes
 {
-	margin-top:40px;
-	height:220px;
-	width:150px;
+	margin-top:30px;
+	height:280px;
+	width:180px;
 	overflow:auto;
+	color:#9F9B9F;
+	font-size:17px;
+	line-height:20px;
+}
+#newApp h5
+{
+	color:#9F9B9F;
+	font-size:17px;
+	line-height:20px;
 }
 
 /*modifier la scrollbar du div elevator*/
@@ -350,3 +388,5 @@ form.form,
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;}
+
+

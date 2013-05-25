@@ -4,6 +4,42 @@ body
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.navbar.expandable {
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 40px;
+}
+
+.navbar.expandable .brand:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.navbar.expandable .navbar-inner {
+  height: 40px;
+}
+
+.navbar.expanded .navbar-inner {
+  height: 65px;
+}
+.navbar.expanded {
+  height: 65px;
+}
+
+#hover-header {
+  display: none;
+  float: none;
+  text-align: center;
+  margin-top: 18px;
+  background: none;
+  border: none;
+}
+
+.expanded #hover-header {
+  display: block;
+}
+
 #container {
   padding: 0;
 }
@@ -17,178 +53,6 @@ a:hover
 	text-decoration: none;
 }
 
-/* CSS PAGE LOGIN */
-
-.btn-primary
-{
-	background:none;
-	background-color: #900274;
-}
-
-.btn-primary:hover,
-.btn-primary:hover
-{
-	background-color: #620D57;
-}
-
-.btn-primary a
-{
-	color:#ffffff;
-}
-
-#loginPage .form input.input,
-#signupPage .form input.input
-{
-	width:96%;
-	height:30px;
-}
-
-#loginPage div.row-fluid,
-#signupPage div.row-fluid
-{
-	margin:0 auto 15px;
-}
-#loginPage a.forgot,
-#signupPage a.forgot
-{
-	text-align: center;
-	display:block;
-	color:#585b5e;
-	font:15px Helvetica,Arial,sans-serif;
-	text-decoration: underline;
-}
-#loginPage a.forgot:hover,
-#signupPage a.forgot:hover
-{
-	color:#000000;
-}
-#loginPage .checkbox
-{
-	font:13px Helvetica,Arial,sans-serif;
-}
-#loginPage .hero-unit,
-#signupPage .hero-unit
-{
-	padding:15px;
-}
-
-#loginPage .buttons .btn,
-#signupPage .buttons .btn
-{
-	margin-bottom:10px;
-}
-
-
-/* CSS PAGE SIGNUP */
-
-#signupPage .form .controls-row input.input1
-{
-	width:48%;
-	height:40px;
-}
-
-#signupPage p.title
-{
-	font:15px Helvetica,Arial,sans-serif;
-	display:inline;
-	line-height:30px;
-	height:30px;
-}
-#signupPage button.back
-{
-	font:15px Helvetica,Arial,sans-serif;
-	float:right;
-	display:inline;
-}
-#signupPage div.row-fluid.links
-{
-	margin:0;
-	height:30px;
-}
-
-/* CSS Connected Page */
-
-#connectedPage .hero-unit
-{
-	padding:10px 10px 5px;
-	margin-bottom:20px;
-}
-#connectedPage .hero-unit button
-{
-	margin-bottom:10px;
-}
-
-#updateOK .row-fluid
-{
-	margin-top:20px;
-}
-
-#contact textarea
-{
- 	width:100%;
-}
-
-
-/* CSS FANCYBOX */
-
-#updateOK,#contactOK,#termsOfUse
-{
-     display: none;
-}
-#newApp .hero-unit
-{
-
-	padding:5px;
-	text-align:center;
-	margin-top:50px;
-}
-#newApp .btn
-{
-	width:200px;
-}
-#newApp .form, #newApp .steps
-{
-	margin-top:20px;
-	margin-bottom:20px;
-}
-#newApp li
-{
-	list-style: none;
-}
-#newApp li.title
-{
-	margin-left:50px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-#newApp li.lightgrey
-{
-	color:#C4C4C4;
-}
-#newApp li.grey
-{
-	color:#9F9B9F;
-}
-#newApp div.arrows
-{
-	position: relative;
-	height:355px;
-	width:100px;
-}
-#newApp div.arrows .down
-{
-	position:absolute;
-	bottom:0px;
-}
-#newApp div.arrows .right
-{
-	position:absolute;
-	bottom:125px;
-}
-#newApp div.iphone
-{
-	padding:30px 50px;
-}
 
 
 /* ==== MAP ==== */
@@ -203,7 +67,7 @@ a:hover
 .navbar .arrow-bot {
   position: absolute;
   bottom: -11px;
-  left: 49%;
+  left: 47.8%;
 }
 
 .navbar .brand {
@@ -214,7 +78,7 @@ a:hover
 }
 
 .navbar .navbar-text {
-  margin-top: -5px;
+  margin-top: -9px;
   margin-right: 20px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -227,7 +91,6 @@ a:hover
 
 
 .navbar-bottom {
-  margin-top: 50px;
   margin-bottom: 0;
 }
 
@@ -254,6 +117,21 @@ a:hover
   min-height: 1000px;
 }
 
+.map-container #container-toolbar {
+  float: none;
+}
+
+.map-container .tool_popup{margin-top:27px; background-color: none;}
+.map-container #back.tool_popup{margin-left:-40px;display:none;}
+.map-container #forward.tool_popup{margin-left:-10px;display:none;}
+.map-container #close.tool_popup{margin-left:20px;display:none;}
+.map-container #select.tool_popup{margin-left:55px;display:none;}
+.map-container #move.tool_popup{margin-left:85px;display: none;}
+.map-container #zoom-out.tool_popup{margin-left:115px;display:none;}
+.map-container #zoom-in.tool_popup{margin-left:145px;display:none;}
+
+
+
 .sidebar-toolbar {
   position: absolute;
   left: 0;
@@ -263,12 +141,13 @@ a:hover
 .sidebar-toolbar {
   margin: 0;
   list-style: none;
-  background: white;
-  padding: 2px;
+  background: transparent;
 }
 
 .sidebar-toolbar li {
-  margin-bottom: 2px;
+  padding-bottom: 0px;
+  margin-right: -1px;
+  margin-left: -1px;
 }
 .sidebar-toolbar li:last-child {
   margin-bottom: 0;

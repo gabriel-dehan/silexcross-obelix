@@ -2,16 +2,43 @@
   partial.load('headerMap');
 </script>
 
-<div class="map-container">
-  <div class="top-toolbar">
-    <img src="resources/img/map/icons.png">
+<div class="navbar navbar-bottom">
+  <div class="navbar-inner">
+    <ul class="nav">
+      <li><a href=""><img src="resources/img/map/params.png"></a></li>
+      <li><a href=""><img src="resources/img/map/map.png"></a></li>
+      <li><a href=""><img src="resources/img/map/editor.png"></a></li>
+      <li><a href=""><img src="resources/img/map/upload.png"></a></li>
+    </ul>
   </div>
+</div>
+
+<div class="map-container">
+  <div id="container-toolbar">
+    <div id="toolbar">
+      <img src="resources/img/editor/tool_bar/icones_16.png" onmouseover="$('#back').fadeIn(200);" onmouseout="$('#back').fadeOut(80);"/>
+      <div class="tool_popup" id="back">back</div>
+      <img src="resources/img/editor/tool_bar/icones_18.png" onmouseover="$('#forward').fadeIn(200);" onmouseout="$('#forward').fadeOut(80);"/>
+      <div class="tool_popup" id="forward">forward</div>
+      <img src="resources/img/editor/tool_bar/icones_20.png" onmouseover="$('#close').fadeIn(200);" onmouseout="$('#close').fadeOut(80);"/>
+      <div class="tool_popup" id="close">close</div>
+      <img src="resources/img/editor/tool_bar/icones_22.png" onmouseover="$('#select').fadeIn(200);" onmouseout="$('#select').fadeOut(80);"/>
+      <div class="tool_popup" id="select">select tool</div>
+      <img src="resources/img/editor/tool_bar/icones_24.png" onmouseover="$('#move').fadeIn(200);" onmouseout="$('#move').fadeOut(80);"/>
+      <div class="tool_popup" id="move">move tool</div>
+      <img src="resources/img/editor/tool_bar/icones_26.png" onmouseover="$('#zoom-out').fadeIn(200);" onmouseout="$('#zoom-out').fadeOut(80);"/>
+      <div class="tool_popup" id="zoom-out">zoom out</div>
+      <img src="resources/img/editor/tool_bar/icones_28.png" onmouseover="$('#zoom-in').fadeIn(200);" onmouseout="$('#zoom-in').fadeOut(80);"/>
+      <div class="tool_popup" id="zoom-in">zoom in</div>
+    </div>
+  </div>
+  <!-- end container-toolbar -->
 
   <ul class="sidebar-toolbar">
-    <li><img src="resources/img/map/new.png"></li>
-    <li><img src="resources/img/map/delete.png"></li>
-    <li><img src="resources/img/map/copy.png"></li>
-    <li><img src="resources/img/map/share.png"></li>
+    <li><a href="#"><img src="resources/img/map/new.png"></a></li>
+    <li><a href="#"><img src="resources/img/map/delete.png"></a></li>
+    <li><a href="#"><img src="resources/img/map/copy.png"></a></li>
+    <li><a href="#"><img src="resources/img/map/share.png"></a></li>
   </ul>
 
   <div class="maps">
