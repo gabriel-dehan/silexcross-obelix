@@ -90,6 +90,7 @@ $(function(){
                 PartialLoader.contentDiv(position, file_name).load(
                     url,
                     function(content) {
+                        $('.navbar').remove();
                         position == 'header' ? $('body').prepend(content) : $('body').append(content);
                     }
                 );
