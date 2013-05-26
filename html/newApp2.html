@@ -7,44 +7,49 @@
 
 
 	<div class="timeline">
-		<img src="resources/img/newApp/timeline2.png" alt="Step 2 / 3" />			
+		<map name="timeline">
+			<area shape="rect" coords="0,0,62,62" href="#newApp" title="Step 1" id="Step1">
+			<area shape="rect" coords="178,0,246,62" href="#newApp2" title="Step 2" id="Step2">
+			<area shape="rect" coords="375,0,462,62" href="#newApp3" title="Step 3" id="Step3">
+		</map>
+		<img src="resources/img/newApp/timeline2.png" usemap="#timeline">		
 	</div>
 
 	<div class="content text-center">
         <form method="post" action="#newApp3">
 
-
-			<div class="device">
-				<input type="radio" id="mobile" name="type" />
-				<label for="mobile">
-					<img src="resources/img/newApp/mobile.png" alt="Mobile" />
-					<p>MOBILE</p>
-				</label>
-			</div>
-			<div class="device">
-				<input type="radio" id="desktop" name="type" />
-				<label for="desktop">
-					<img src="resources/img/newApp/desktop.png" alt="Desktop" />
-					<p>DESKTOP</p>
-				</label>
-			</div>
-			<div class="device">
-				<input type="radio" id="tablet" name="type" />
-				<label for="tablet">
-					<img src="resources/img/newApp/tablet.png" alt="Tablet" />
-					<p>TABLET</p>
-				</label>
-			</div>
-			<div class="device">
-				<input type="radio" id="tv" name="type" />
-				<label for="tv">
-					<img src="resources/img/newApp/tv.png" alt="Connected TV" />
-					<p>CONNECTED TV</p>
-				</label>
+        	<div class="deviceList">
+				<div class="device">
+					<input type="radio" id="mobile" name="type" />
+					<label for="mobile">
+						<img src="resources/img/newApp/mobile.png" alt="Mobile" />
+						<p>MOBILE</p>
+					</label>
+				</div>
+				<div class="device">
+					<input type="radio" id="desktop" name="type" />
+					<label for="desktop">
+						<img src="resources/img/newApp/desktop.png" alt="Desktop" />
+						<p>DESKTOP</p>
+					</label>
+				</div>
+				<div class="device">
+					<input type="radio" id="tablet" name="type" />
+					<label for="tablet">
+						<img src="resources/img/newApp/tablet.png" alt="Tablet" />
+						<p>TABLET</p>
+					</label>
+				</div>
+				<div class="device">
+					<input type="radio" id="tv" name="type" />
+					<label for="tv">
+						<img src="resources/img/newApp/tv.png" alt="Connected TV" />
+						<p>CONNECTED TV</p>
+					</label>
+				</div>
 			</div>
             
-           
-            <input type="submit" class="btn btn-large btn-block btn-primary" value="Next "/>
+           	<p><input type="submit" class="btn btn-large btn-block btn-primary" value="Next "/></p>
           	
 
 		</form>

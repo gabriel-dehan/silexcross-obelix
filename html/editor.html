@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  partial.load("header");
+  partial.load("headerMap");
 </script>
 <div id="big-container">
 	<!-- // Top row //-->
@@ -8,41 +8,41 @@
         	<!-- // container-toolbar // -->
             <div id="container-toolbar">
                 <div id="toolbar">
-                	<img src="resources/img/editor/tool_bar/icones_16.png" onmouseover="$('#back').fadeIn(200);" onmouseout="$('#back').fadeOut(80);"/>
+                	<img id="back-over" src="resources/img/editor/tool_bar/icones_16.png" onmouseover="toolbarHover(this.src,this.id);$('#back').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#back').fadeOut(80);"/>
                     	<div class="tool_popup" id="back">back</div>
-                    <img src="resources/img/editor/tool_bar/icones_18.png" onmouseover="$('#forward').fadeIn(200);" onmouseout="$('#forward').fadeOut(80);"/>
+                    <img id="forward-over" src="resources/img/editor/tool_bar/icones_18.png" onmouseover="toolbarHover(this.src,this.id);$('#forward').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#forward').fadeOut(80);"/>
                     	<div class="tool_popup" id="forward">forward</div>
-                    <img src="resources/img/editor/tool_bar/icones_20.png" onmouseover="$('#close').fadeIn(200);" onmouseout="$('#close').fadeOut(80);"/>
+                    <img id="close-over" src="resources/img/editor/tool_bar/icones_20.png" onmouseover="toolbarHover(this.src,this.id);$('#close').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#close').fadeOut(80);"/>
                     	<div class="tool_popup" id="close">close</div>
-                    <img src="resources/img/editor/tool_bar/icones_22.png" onmouseover="$('#select').fadeIn(200);" onmouseout="$('#select').fadeOut(80);"/>
+                    <img id="select-over" src="resources/img/editor/tool_bar/icones_22.png" onmouseover="toolbarHover(this.src,this.id);$('#select').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#select').fadeOut(80);"/>
                     	<div class="tool_popup" id="select">select tool</div>
-                    <img src="resources/img/editor/tool_bar/icones_24.png" onmouseover="$('#move').fadeIn(200);" onmouseout="$('#move').fadeOut(80);"/>
+                    <img id="move-over" src="resources/img/editor/tool_bar/icones_24.png" onmouseover="toolbarHover(this.src,this.id);$('#move').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#move').fadeOut(80);"/>
                     	<div class="tool_popup" id="move">move tool</div>
-                    <img src="resources/img/editor/tool_bar/icones_26.png" onmouseover="$('#zoom-out').fadeIn(200);" onmouseout="$('#zoom-out').fadeOut(80);"/>
+                    <img id="zoomout-over" src="resources/img/editor/tool_bar/icones_26.png" onmouseover="toolbarHover(this.src,this.id);$('#zoom-out').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#zoom-out').fadeOut(80);"/>
                     	<div class="tool_popup" id="zoom-out">zoom out</div>
-                    <img src="resources/img/editor/tool_bar/icones_28.png" onmouseover="$('#zoom-in').fadeIn(200);" onmouseout="$('#zoom-in').fadeOut(80);"/>
+                    <img id="zoomin-over" src="resources/img/editor/tool_bar/icones_28.png" onmouseover="toolbarHover(this.src,this.id);$('#zoom-in').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#zoom-in').fadeOut(80);"/>
                     	<div class="tool_popup" id="zoom-in">zoom in</div>
-                    <img src="resources/img/editor/tool_bar/icones_30.png" onmouseover="$('#copy').fadeIn(200);" onmouseout="$('#copy').fadeOut(80);"/>
+                    <img id="copy-over" src="resources/img/editor/tool_bar/icones_30.png" onmouseover="toolbarHover(this.src,this.id);$('#copy').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#copy').fadeOut(80);"/>
                     	<div class="tool_popup" id="copy">copy</div>
-                    <img src="resources/img/editor/tool_bar/icones_32.png" onmouseover="$('#paste').fadeIn(200);" onmouseout="$('#paste').fadeOut(80);"/>
+                    <img id="paste-over" src="resources/img/editor/tool_bar/icones_32.png" onmouseover="toolbarHover(this.src,this.id);$('#paste').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#paste').fadeOut(80);"/>
                     	<div class="tool_popup" id="paste">paste</div>
-                    <img src="resources/img/editor/tool_bar/icones_34.png" onmouseover="$('#up').fadeIn(200);" onmouseout="$('#up').fadeOut(80);"/>
+                    <img id="bring-forward-over"  src="resources/img/editor/tool_bar/icones_34.png" onmouseover="toolbarHover(this.src,this.id);$('#up').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#up').fadeOut(80);"/>
                     	<div class="tool_popup" id="up">bring forward</div>
-                    <img src="resources/img/editor/tool_bar/icones_36.png" onmouseover="$('#down').fadeIn(200);" onmouseout="$('#down').fadeOut(80);"/>
+                    <img id="bring-backward-over" src="resources/img/editor/tool_bar/icones_36.png" onmouseover="toolbarHover(this.src,this.id);$('#down').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#down').fadeOut(80);"/>
                     	<div class="tool_popup" id="down">bring backward</div>
-                    <img src="resources/img/editor/tool_bar/icones_38.png" onmouseover="$('#regle').fadeIn(200);" onmouseout="$('#regle').fadeOut(80);"/>
+                    <img id="rules-over" src="resources/img/editor/tool_bar/icones_38.png" onmouseover="toolbarHover(this.src,this.id);$('#regle').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#regle').fadeOut(80);"/>
                     	<div class="tool_popup" id="regle">hide/show the rules</div>
-                    <img src="resources/img/editor/tool_bar/icones_40.png" onmouseover="$('#grille').fadeIn(200);" onmouseout="$('#grille').fadeOut(80);"/>
+                    <img id="grid-over" src="resources/img/editor/tool_bar/icones_40.png" onmouseover="toolbarHover(this.src,this.id);$('#grille').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#grille').fadeOut(80);"/>
                     	<div class="tool_popup" id="grille">hide/show the grid</div>
-                    <img src="resources/img/editor/tool_bar/icones_42.png" onmouseover="$('#align-left').fadeIn(200);" onmouseout="$('#align-left').fadeOut(80);"/>
+                    <img id="left-over" src="resources/img/editor/tool_bar/icones_42.png" onmouseover="toolbarHover(this.src,this.id);$('#align-left').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#align-left').fadeOut(80);"/>
                     	<div class="tool_popup" id="align-left">align to the left</div>
-                    <img src="resources/img/editor/tool_bar/icones_44.png" onmouseover="$('#align-center').fadeIn(200);" onmouseout="$('#align-center').fadeOut(80);"/>
+                    <img id="center-over" src="resources/img/editor/tool_bar/icones_44.png" onmouseover="toolbarHover(this.src,this.id);$('#align-center').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#align-center').fadeOut(80);"/>
                     	<div class="tool_popup" id="align-center">align on center</div>
-                    <img src="resources/img/editor/tool_bar/icones_46.png" onmouseover="$('#align-right').fadeIn(200);" onmouseout="$('#align-right').fadeOut(80);"/>
+                    <img id="right-over" src="resources/img/editor/tool_bar/icones_46.png" onmouseover="toolbarHover(this.src,this.id);$('#align-right').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#align-right').fadeOut(80);"/>
                     	<div class="tool_popup" id="align-right">align to the right</div>
-                    <img src="resources/img/editor/tool_bar/icones_48.png" onmouseover="$('#vertical-align').fadeIn(200);" onmouseout="$('#vertical-align').fadeOut(80);"/>
+                    <img id="vertical-over" src="resources/img/editor/tool_bar/icones_48.png" onmouseover="toolbarHover(this.src,this.id);$('#vertical-align').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#vertical-align').fadeOut(80);"/>
                     	<div class="tool_popup" id="vertical-align">vertical align</div>
-                    <img src="resources/img/editor/tool_bar/icones_50.png" onmouseover="$('#horizontal-align').fadeIn(200);" onmouseout="$('#horizontal-align').fadeOut(80);"/>
+                    <img id="horizontal-over" src="resources/img/editor/tool_bar/icones_50.png" onmouseover="toolbarHover(this.src,this.id);$('#horizontal-align').fadeIn(200);" onmouseout="toolbarOut(this.src,this.id);$('#horizontal-align').fadeOut(80);"/>
                     	<div class="tool_popup" id="horizontal-align">horizontal align</div>
                 </div>
             </div>
@@ -56,16 +56,16 @@
             <!-- // container-menu //-->
             <div id="container-menu">
             	<div id="menu">
-                	<div class="filtre-off"><div class="tool" id="text" onclick="clicTool(this.id);"></div></div>
+                	<div id="1" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="text" onclick="clicTool(this.id)"></div>
                     	<div class="toolbar" id="toolbar-text">
-                        	<img src="resources/img/editor/menu/text/sm_texte_04.png"/>
+                        	<img src="resources/img/editor/menu/text/sm_texte_04.png" title="test"/>
                             <img src="resources/img/editor/menu/text/sm_texte_05.png" onclick="extend('#extend_text', '175');"/>
                             <img src="resources/img/editor/menu/text/sm_texte_06.png" id="extend_text" width="0px"/>
                             <img src="resources/img/editor/menu/text/sm_texte_07.png"/>
                             <img src="resources/img/editor/menu/text/sm_texte_08.png"/>
                             
                         </div>
-                    <div class="filtre-off"><div class="tool" id="image" onclick="clicTool(this.id);"></div></div>
+                    <div id="2" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="image" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-image">
                         	<img src="resources/img/editor/menu/image/sm_images_04.png"/>
                             <img src="resources/img/editor/menu/image/sm_images_05.png"/>
@@ -73,7 +73,7 @@
                             <img src="resources/img/editor/menu/image/sm_images_07.png" id="extend_image" width="0px"/>
                             <img src="resources/img/editor/menu/image/sm_images_08.png"/>
                         </div>
-                    <div class="filtre-off"><div class="tool" id="polygon" onclick="clicTool(this.id);"></div></div>
+                    <div id="3" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="polygon" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-polygon">
                         	<img src="resources/img/editor/menu/polygon/sm_formes_04.png"/>
                             <img src="resources/img/editor/menu/polygon/sm_formes_05.png"/>
@@ -82,20 +82,20 @@
                             <img src="resources/img/editor/menu/polygon/sm_formes_08.png"/>
                             <img src="resources/img/editor/menu/polygon/sm_formes_09.png"/>
                         </div>
-                    <div class="filtre-off"><div class="tool" id="list" onclick="clicTool(this.id);"></div></div>
+                    <div id="4" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="list" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-list">
                         	<img src="resources/img/editor/menu/list/sm_menu_04.png"/>
                             <img src="resources/img/editor/menu/list/sm_menu_05.png"/>
                             <img src="resources/img/editor/menu/list/sm_menu_06.png"/>
                             <img src="resources/img/editor/menu/list/sm_menu_07.png"/>
                         </div>
-                    <div class="filtre-off"><div class="tool" id="feed" onclick="clicTool(this.id);"></div></div>
+                    <div id="5" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="feed" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-feed">
                         	<img src="resources/img/editor/menu/social_network/sm_feed_04.png"/>
                             <img src="resources/img/editor/menu/social_network/sm_feed_05.png"/>
                             <img src="resources/img/editor/menu/social_network/sm_feed_06.png"/>
                         </div>
-                    <div class="filtre-off"><div class="tool" id="plugin" onclick="clicTool(this.id);"></div></div>
+                    <div id="6" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="plugin" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-plugin">
                         	<img src="resources/img/editor/menu/plugins/sm_plugin_04.png"/>                        
                             <img src="resources/img/editor/menu/plugins/sm_plugin_05.png"/>
@@ -105,7 +105,7 @@
                             <img src="resources/img/editor/menu/plugins/sm_plugin_09.png"/>
                             <img src="resources/img/editor/menu/plugins/sm_plugin_10.png"/>
                         </div>
-                    <div class="filtre-end"><div class="tool" id="more"></div></div>
+                    <div class="filtre-end"></div><div class="tool" id="more"></div>
                     	<div class="toolbar" id="toolbar-more">
                         
                         </div>
