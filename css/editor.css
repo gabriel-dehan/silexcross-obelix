@@ -155,7 +155,7 @@ hr{
 	height:auto;
 	float:left;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 70px;
 }
 
 #tools img {
@@ -210,26 +210,27 @@ canvas#layer{
 	color: #5c5c5c;
 	background-image:url(../resources/img/editor/tool_bar/bulle_03.png);
 	background-repeat: no-repeat;
+	margin-top:30px;
 }
 
 #back.tool_popup{margin-left:-40px;display:none;}
 #forward.tool_popup{margin-left:-10px;display:none;}
 #close.tool_popup{margin-left:20px;display:none;}
-#select.tool_popup{margin-left:55px;display:none;}
-#move.tool_popup{margin-left:85px;display: none;}
-#zoom-out.tool_popup{margin-left:115px;display:none;}
-#zoom-in.tool_popup{margin-left:145px;display:none;}
-#copy.tool_popup{margin-left:180px;display:none;}
-#paste.tool_popup{margin-left:210px;display:none;}
-#up.tool_popup{margin-left:245px;display:none;}
-#down.tool_popup{margin-left:275px;display:none;}
-#regle.tool_popup{margin-left:300px;display:none;}
-#grille.tool_popup{margin-left:335px;display:none;}
-#align-left.tool_popup{margin-left:365px;display:none;}
-#align-center.tool_popup{margin-left:395px;display:none;}
-#align-right.tool_popup{margin-left:425px;display:none;}
-#vertical-align.tool_popup{margin-left:455px;display:none;}
-#horizontal-align.tool_popup{margin-left:490px;display:none;}
+#select.tool_popup{margin-left:45px;display:none;}
+#move.tool_popup{margin-left:70px;display: none;}
+#zoom-out.tool_popup{margin-left:100px;display:none;}
+#zoom-in.tool_popup{margin-left:130px;display:none;}
+#copy.tool_popup{margin-left:155px;display:none;}
+#paste.tool_popup{margin-left:180px;display:none;}
+#up.tool_popup{margin-left:215px;display:none;}
+#down.tool_popup{margin-left:235px;display:none;}
+#regle.tool_popup{margin-left:260px;display:none;}
+#grille.tool_popup{margin-left:285px;display:none;}
+#align-left.tool_popup{margin-left:310px;display:none;}
+#align-center.tool_popup{margin-left:340px;display:none;}
+#align-right.tool_popup{margin-left:365px;display:none;}
+#vertical-align.tool_popup{margin-left:395px;display:none;}
+#horizontal-align.tool_popup{margin-left:420px;display:none;}
 
 #attribute select,input[type="text"], input[type="search"], input[type="email"], input[type="password"]{
   background: none;
