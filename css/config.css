@@ -8,6 +8,13 @@ margin-left: 10px;
 
 input.form {
 background-color:silver;
+color: black;
+}
+
+input.form2 {
+background-color:silver;
+color: black;
+width: 140px;
 }
 
 input.button {
