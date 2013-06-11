@@ -1,31 +1,31 @@
 $(document).ready( function() {
-  setTimeout(
-      function() {
-          Header.init();
-          Map.init();
+    partial.onLoad(function(route) {
+        Header.init();
+	      $('.fancybox').fancybox({});
+    })
 
-	        $('.fancybox').fancybox({});
-      }
-  , 600);
+    partial.onceLoaded('map', function(route) {
+        Map.init();
+        Map.interact();
+    })
 });
 
 var Header = (function() {
     function _init() {
-        console.log($('.expandable'));
         $('.expandable').on('click', function(e) {
-            console.log('click');
             $(this).toggleClass('expanded');
         });
     }
-
     return {init:_init};
 })();
 
 var Map = (function() {
+    var registered = [];
+
     function _init() {
         var $main = $('.map-container');
-
         $main.css('min-height', $(window).height() - 100);
+
         $main.find('.sidebar-toolbar li').on('mouseenter', function() {
             var self = $(this),
                 img  = self.find('img'),
@@ -39,5 +39,39 @@ var Map = (function() {
         });
     }
 
-    return {init:_init};
+    function _interact() {
+        var $main = $('.map-container');
+
+        $main.find('.content').on('click', function() {
+
+            if (!$(this).hasClass('new')) {
+                registered.push($(this).parents('.map'));
+                console.log('Registered');
+            } else {
+                var self = $(this),
+                    next = self.parents('.map').next('.map');
+                next.removeClass('hide');
+                self.removeClass('new').html('<p>Master Page Bottom</p>');
+                registered = []
+            }
+        });
+
+        $('span.del_map').on('click', function() {
+            registered.each(function(e) {
+                next = e.next('.map');
+                if (next.find('.content').hasClass('new')
+                    || next.find('.content').hasClass('new-fake') ) {
+                    c = e.find('.content');
+                    next.addClass('hide');
+                    c.addClass('new');
+                    c.html('');
+                } else {
+                    e.addClass('hide');
+                }
+            });
+            registered = []
+        });
+    }
+
+    return {init:_init, interact:_interact};
 })();

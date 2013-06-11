@@ -144,7 +144,7 @@ a:hover
 .sidebar-toolbar {
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 30%;
 }
 
 .sidebar-toolbar {
@@ -154,6 +154,7 @@ a:hover
 }
 
 .sidebar-toolbar li {
+  cursor: pointer;
   padding-bottom: 0px;
   margin-right: -1px;
   margin-left: -1px;
@@ -187,7 +188,7 @@ a:hover
   margin: 45px 0 0 0;
 }
 
-.map .content.new {
+.map .content.new, .map .content.new-fake {
   background: rgb(144, 144, 144) url('../resources/img/map/plus.png') no-repeat center center;
 }
 
@@ -240,5 +241,10 @@ a:hover
 
 .bottom {
   top: 299px;
+  left: 40%;
+}
+
+.bottom.last {
+  top: 449px;
   left: 40%;
 }

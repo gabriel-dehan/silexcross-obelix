@@ -1,5 +1,5 @@
 $(function(){
-    Logger = {};
+    var Logger = {};
     Logger.log = {
         routing: function(route, file_path) {
             this.file_path = file_path;
@@ -27,16 +27,17 @@ $(function(){
         resource_url: function(){ return this.protocol() + '://' + location.host + '/' + this.file_path; }
     }
 
-    Router = window.Router = function() {
+    var Router = window.Router = function() {
         this.dispatch = function() {
             var route        = location.hash.split('#')[1] || '/',
                 file_path    = 'html/' + route + '.html';
 
-            if (route != '/') {
-                Logger.log.routing(route, file_path);
-                Logger.log.separator();
-                $('#container[role="main"]').load(file_path);
-            }
+            if (route == '/') { file_path = 'html/login.html'; }
+
+            Logger.log.routing(route, file_path);
+            Logger.log.separator();
+            $('#container[role="main"]').load(file_path);
+            this.current_route = route
         }
     };
 
@@ -56,7 +57,8 @@ $(function(){
     PartialLoader = function(opts) {
         this.partials = {
             header: ['header'],
-            footer: ['footer']
+            footer: ['footer'],
+            callbacks: {}
         };
         this.base_path = 'html/partials/';
     }
@@ -92,6 +94,13 @@ $(function(){
                     function(content) {
                         $('.navbar').remove();
                         position == 'header' ? $('body').prepend(content) : $('body').append(content);
+                        route = router.current_route;
+                        if(window.partial.partials.callbacks[route] != undefined) {
+                            window.partial.partials.callbacks[route].call(this, route);
+                        }
+                        if(window.partial.partials.callbacks['all'] != undefined) {
+                            window.partial.partials.callbacks['all'].call(this, route);
+                        }
                     }
                 );
             });
@@ -101,6 +110,8 @@ $(function(){
     PartialLoader.prototype.clearAll  = function() { this.partials = { header: [], footer: [] }; return this; }
     PartialLoader.prototype.addHeader = function(name) { this.partials.header.push(name); return this; }
     PartialLoader.prototype.addFooter = function(name) { this.partials.footer.push(name); return this; }
+    PartialLoader.prototype.onceLoaded = function(route, cb) { this.partials.callbacks[route] = cb }
+    PartialLoader.prototype.onLoad = function(cb) { this.partials.callbacks['all'] = cb }
 
     window.partial = partial = new PartialLoader();
 });
