@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<div class="all">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title>Configuration</title>
@@ -7,35 +8,35 @@
 	<link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">	
 	<link href="../css/config.css" rel="stylesheet" type="text/css">
 </head>
+<div class="bodyclass">
 <body>
 	<div class = "container">
 	<div class="row">
-		<img src="../resources/img/config/info.jpg" align="left">
-		<img src="../resources/img/config/help.jpg" align="right">
+		<img src="../resources/img/config/info.jpg" align="left" class="pict">
+		<img src="../resources/img/config/help.jpg" align="right" class="pict">
 	</div>
 	</br></br>
 	<div class="row">
 	<div class = "span4">
-	<form action="config-target.php" method="post">
-				<h2>
-					Project infos
-				</h2>
+	<form action="" method="post">
+				<h2>Project infos</h2>
 				<p>
 					<input type="text" name="project" placeholder="Project name" class="form">
 				</p>
 				<p>
-					Version
+					<span class = "textform">Version</span>
 					<input type="text" name="version" placeholder="0.0.0.a" class="form2">
 				</p>
 				<p>
-					<input type="text" name="size" placeholder="Project size" class="form">
+					<span class = "textform">Project size</span>
+					<input type="text" name="size" placeholder="10mo" class="form3">
 				</p>
 				<p>
-					<textarea name="keywords" rows="8" cols="30">Keywords
+					<textarea name="keywords" rows="8" cols="30" class="area">Keywords
 					</textarea>
 				</p>
 				<p>
-					<textarea name="description" rows="8" cols="30" class="form">Description
+					<textarea name="description" rows="8" cols="30" class="area">Description
 					</textarea>
 				</p>
 			</div>
@@ -77,7 +78,7 @@
 				</p>
 				</br>
 				<p>
-					Version
+					<span class = "textform">Version</span>
 					<input type="text" name="version2" placeholder="0.0.0.a" class="form">
 				</p>
 				<p>
@@ -89,4 +90,6 @@
 	</form>
 </div>
 </body>
+</div>
+</div>
 </html>
