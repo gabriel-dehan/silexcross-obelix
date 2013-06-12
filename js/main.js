@@ -24,7 +24,7 @@ var Map = (function() {
 
     function _init() {
         var $main = $('.map-container');
-        $main.css('min-height', $(window).height() - 100);
+        $main.css('min-height', $(window).height() - 80);
 
         $main.find('.sidebar-toolbar li').on('mouseenter', function() {
             var self = $(this),
@@ -53,6 +53,7 @@ var Map = (function() {
                 next.removeClass('hide');
                 self.removeClass('new').html('<p>Master Page Bottom</p>');
                 registered = []
+                $('.map-container').css('min-height', $(window).height() + 80);
             }
         });
 
@@ -70,6 +71,11 @@ var Map = (function() {
                 }
             });
             registered = []
+            $('.map-container').css('min-height', $(window).height() - 100);
+        });
+
+        $('span.share_map').on('click', function() {
+            $('.map-container .footer').toggleClass('hide');
         });
     }
 

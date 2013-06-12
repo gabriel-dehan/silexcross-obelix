@@ -248,3 +248,52 @@ a:hover
   top: 449px;
   left: 40%;
 }
+
+/* Map attributes */
+#container-attribute.map-attributes {
+  margin-top: 0;
+  height: 0;
+  float: none;
+  height: auto;
+  width: auto;
+  max-width: none;
+}
+
+.map-container .footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #464543;
+}
+
+#container-attribute.map-attributes .attribute-bg {
+  background-image: url('../resources/img/editor/attribute/background_prop.png');
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: normal;
+  color: #999;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.map-attributes .attribute {
+  margin-top: -1px;
+  padding: 13px 15px 5px 15px;
+  float: left;
+  color: #8c8c8c;
+  border: none;
+  background-color: #464543;
+  border-radius: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  text-align: left;
+}
+
+.attribute select, input[type="text"], input[type="search"], input[type="email"], input[type="password"] {
+background: none;
+background-color: #313131;
+color: #646464;
+font-family: editorFont, Verdana, Geneva, sans-serif;
+border-color: #202020;
+}
