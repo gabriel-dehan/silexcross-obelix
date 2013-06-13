@@ -18,10 +18,16 @@ var Editor = (function() {
 
     function _init() {
         $('.attribute-logo.lib').on('click', function() {
-            data = $('#container-attribute').html();
-            $('#container-attribute').html('<img src="resources/img/editor/bibli_home.png" class="biblimage" />');
-            $('.biblimage').on('click', function() {
-                $('#container-attribute').html(data);
+            $('#container-attribute .content-attr').hide();
+            $('#container-attribute .b1').show();
+            $('.b1, .b2, .b3, .b4').on('click', function() {
+                if ($(this).hasClass('b4')) {
+                    $(this).hide();
+                    $('#container-attribute .content-attr.attr').show();
+                } else {
+                    $(this).hide();
+                    $(this).next('.content-attr').show();
+                }
             });
         });
     }

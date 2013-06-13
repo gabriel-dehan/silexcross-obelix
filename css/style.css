@@ -297,3 +297,8 @@ color: #646464;
 font-family: editorFont, Verdana, Geneva, sans-serif;
 border-color: #202020;
 }
+
+.b1 img, .b2 img, .b3 img, .b4 img {
+  width: 98%;
+  float: right;
+}
