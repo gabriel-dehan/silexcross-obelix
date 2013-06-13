@@ -63,7 +63,7 @@
                             <img src="resources/img/editor/menu/text/sm_texte_06.png" id="extend_text" width="0px"/>
                             <img src="resources/img/editor/menu/text/sm_texte_07.png"/>
                             <img src="resources/img/editor/menu/text/sm_texte_08.png"/>
-                            
+
                         </div>
                     <div id="2" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="image" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-image">
@@ -97,7 +97,7 @@
                         </div>
                     <div id="6" class="filtre-off" onclick="clicFiltre(this.className, this.id)"></div><div class="tool" id="plugin" onclick="clicTool(this.id);"></div>
                     	<div class="toolbar" id="toolbar-plugin">
-                        	<img src="resources/img/editor/menu/plugins/sm_plugin_04.png"/>                        
+                        	<img src="resources/img/editor/menu/plugins/sm_plugin_04.png"/>
                             <img src="resources/img/editor/menu/plugins/sm_plugin_05.png"/>
                             <img src="resources/img/editor/menu/plugins/sm_plugin_06.png"/>
                             <img src="resources/img/editor/menu/plugins/sm_plugin_07.png"/>
@@ -107,17 +107,17 @@
                         </div>
                     <div class="filtre-end"></div><div class="tool" id="more"></div>
                     	<div class="toolbar" id="toolbar-more">
-                        
+
                         </div>
                 </div><!-- end menu-->
             </div>
             <!-- end container-menu -->
-                        
+
             <!-- // container-editor // -->
             <div id="container-editor">
                 <div id="editor">
-                    <canvas id="layer" width="850" height="450">Duuude, your browser doesn't support the HTML5 canvas tag. You suck ! 
-                        <img id="website" src="resources/img/editor/website.jpg"/> 
+                    <canvas id="layer" width="850" height="450">Duuude, your browser doesn't support the HTML5 canvas tag. You suck !
+                        <img id="website" src="resources/img/editor/website.jpg"/>
                     </canvas>
                     <canvas id="navbar" width="15" height="550">
                         <img id="bar" src="resources/img/editor/tool_bar/toolbar.jpg"/>
@@ -125,11 +125,11 @@
                 </div>
             </div>
             <!-- end container-editor> -->
-            
-           
+
+
     </div>
     <!-- end Mid row-->
-    
+
      <!-- // container-attribute //-->
             <div id="container-attribute">
                 <div id="attribute">
@@ -137,12 +137,12 @@
                 	<!--<div class="attribute-logo">ATTRIBUTE</div>-->
                     Name<br />
                     <input type="text" placeholder="Title's name"/><br />
-                    
+
                     Box Size<br />
                     <input type="text" style="width:65px;" placeholder="H"/> px &nbsp;&nbsp;X&nbsp;&nbsp;<input type="text" style="width:65px;" placeholder="W" /> px <br />
                     Box Position<br />
                     <input type="text" style="width:65px;" placeholder="X"/> px &nbsp;&nbsp;X&nbsp;&nbsp;<input type="text" style="width:65px;" placeholder="Y" /> px
-                    <hr>                    
+                    <hr>
                     Format <br />
                     <div class="select-arrow"></div>
                         <select class="test">
@@ -151,14 +151,14 @@
                             <option>Title 3</option>
                         </select><br />
 
-                    
+
                     Font family <br />
                     <div class="select-arrow"></div>
                     <select>
                         <option>Verdana, Arial, sans-serif</option>
-                        <option>Comic Sans MS, Calibri, Century</option>                 
+                        <option>Comic Sans MS, Calibri, Century</option>
                     </select> <br />
-                    
+
                     Font Size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alignment <br />
                     <div class="select-arrow" style="margin-left:35px;"></div>
                     <select style="width:60px;">
@@ -171,9 +171,9 @@
                         <option>16</option>
                         <option>17</option>
                     </select><br />
-                    
+
                     Color <br />
-                    
+
                     <hr width="230px"/>
                     Link to <br/>
                     <div class="select-arrow"></div>
@@ -181,24 +181,24 @@
                         <option>None</option>
                         <option>Url_1</option>
                     </select> <br />
-                    
+
                     <input type="search" placeholder="Search an element..."/>
-                    
+
                     <hr width="230px"/>
-                    
+
                     Transtion <br />
                     <div class="select-arrow"></div>
                     <select>
                         <option>Swipe left</option>
                         <option>Swipe right</option>
                     </select> <br /><br />
-                    
+
                    	<img src="resources/img/editor/attribute/preset.png" class="attribute-logo" style="margin-top:38px;"/>
-                    <img src="resources/img/editor/attribute/librairy.png" class="attribute-logo"/>
+                    <img src="resources/img/editor/attribute/librairy.png" class="attribute-logo lib"/>
                 </div>
             </div>
             <!-- end container-attribute-->
-    
+
     <!-- bottom row -->
     <div class="row">
         <div class="span12">
@@ -225,15 +225,15 @@
 	var canvaHeight = document.getElementById("layer").height;
 	var canvaWidth = document.getElementById("layer").width;
 	var website=document.getElementById("website");
-	ctx.fillRect(website,canvaWidth,canvaHeight);	
+	ctx.fillRect(website,canvaWidth,canvaHeight);
 	ctx.drawImage(website,0,0);
 
 	var nav = document.getElementById("navbar");
 	var navtx = nav.getContext("2d");
 	var navHeight = document.getElementById("navbar").height;
-	var navWidth = document.getElementById("navbar").width;	
+	var navWidth = document.getElementById("navbar").width;
 	var bar=document.getElementById("bar");
-	ctx.fillRect(bar,navWidth,navHeight);	
+	ctx.fillRect(bar,navWidth,navHeight);
 	ctx.drawImage(bar,835,0);
 </script>
 <!-- end js canvas editor -->

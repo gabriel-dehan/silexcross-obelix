@@ -8,7 +8,26 @@ $(document).ready( function() {
         Map.init();
         Map.interact();
     })
+    partial.onceLoaded('editor', function(route) {
+        Editor.init();
+    })
 });
+
+var Editor = (function() {
+    var data;
+
+    function _init() {
+        $('.attribute-logo.lib').on('click', function() {
+            data = $('#container-attribute').html();
+            $('#container-attribute').html('<img src="resources/img/editor/bibli_home.png" class="biblimage" />');
+            $('.biblimage').on('click', function() {
+                $('#container-attribute').html(data);
+            });
+        });
+    }
+
+    return {init:_init};
+})();
 
 var Header = (function() {
     function _init() {
