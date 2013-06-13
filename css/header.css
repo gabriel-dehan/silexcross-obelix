@@ -18,3 +18,46 @@ src: url('font/Exo-Bold.otf');
 	border-bottom: solid 1px #bbbbbb;
 }
 
+#params-logo{
+	display:block;
+	width:54px;
+	height:50px;
+	background-image:url(../resources/img/header/params.png);
+	background-repeat:no-repeat;
+	float: left;
+}
+#params-logo:hover{	background-image:;}
+
+#map-logo{
+	display:block;
+	width:139px;
+	height:50px;
+	background-image:url(../resources/img/header/map.png);
+	background-repeat:no-repeat;
+	float: left;
+	margin-lfet:54px;
+}
+#map-logo:hover{ background-image:;}
+
+#editor-logo{
+	display:block;
+	width:172px;
+	height:50px;
+	background-image:url(../resources/img/header/editor.png);
+	background-repeat:no-repeat;
+	float: left;
+	margin-lfet:54px;
+}
+#editor-logo:hover{	background-image:;}
+
+#upload-logo{
+	display:block;
+	width:58px;
+	height:50px;
+	background-image:url(../resources/img/header/upload.png);
+	background-repeat:no-repeat;
+	float: left;
+	margin-lfet:54px;
+	cursor: pointer;
+}
+#upload-logo:hover{	background-image:;}
